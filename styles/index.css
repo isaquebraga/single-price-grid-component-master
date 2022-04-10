@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap");
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+
+.grid-main {
+    display: grid;
+    grid-template-areas: "grid-first grid-first"
+                         "grid-second grid-third";
+    margin-top: 4%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 520px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+}
+
+p, li {
+    padding-left: 50px;
+    padding-right: 200px ;
+}
+
+.grid-first {
+    grid-area: grid-first;
+    background-color: #FFFFFF;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    -webkit-box-shadow: 0px -5px 10px 0px rgba(186, 192, 204, 0.5);
+    -moz-box-shadow: 0px -5px 10px 0px rgba(186, 192, 204, 0.5);
+    box-shadow: 0px -5px 10px 0px rgba(186, 192, 204, 0.5);
+}
+
+.grid-first-title {
+    padding-top: 50px;
+    font-size: 30px;
+    color: #30ABA9;
+    font-weight: 700;
+}
+
+.grid-first-p1 {
+    padding-top: 30px;
+    font-size: 20px;
+    color: #BFDF32;
+    font-weight: 700;
+}
+
+.grid-first-p2 {
+    padding-top: 30px;
+    font-size: 20px;
+    color: #BAC0CC;
+}
+
+.grid-first-p3 {
+    padding-top: 10px;
+    font-size: 20px;
+    color: #BAC0CC;
+}
+
+.grid-second {
+    grid-area: grid-second;
+    background-color: #2BB3B1;
+    border-bottom-left-radius: 10px;
+    -webkit-box-shadow: -4px 4px 10px 0px rgba(186, 192, 204, 0.5);
+    -moz-box-shadow: -4px 4px 10px 0px rgba(186, 192, 204, 0.5);
+    box-shadow: -4px 4px 10px 0px rgba(186, 192, 204, 0.5);
+}
+
+.grid-second-title {
+    padding-top: 30px;
+    font-size: 22px;
+    color: white;
+    font-weight: 400;
+}
+
+.grid-second-div {
+    display: flex;
+}
+
+.grid-second-p1 {
+    padding-top: 25px;
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    padding-right: 20px;
+}
+
+.grid-second-p2 {
+    padding-left: 0px;
+    padding-top: 35px;
+    font-size: 20px;
+    color: #66D4D3;
+}
+
+.grid-second-p3 {
+    padding-top: 20px;
+    font-size: 15px;
+    color: #D0FFFF;
+}
+
+.grid-second-button {
+    text-align: center;
+}
+
+.grid-second-button button {
+    background-color: #BFDF32;
+    color: #FDFFBB;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 60px;
+    width: 340px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 0 0 1em -10px #000000;
+}
+
+.grid-second-button button:hover {
+    cursor: pointer;
+}
+
+.grid-third {
+    grid-area: grid-third;
+    background-color: #4ABEBD;
+    border-bottom-right-radius: 10px;
+    -webkit-box-shadow: 4px 3px 10px 0px rgba(186, 192, 204, 0.5);
+    -moz-box-shadow: 4px 3px 10px 0px rgba(186, 192, 204, 0.5);
+    box-shadow: 4px 3px 10px 0px rgba(186, 192, 204, 0.5);
+}
+
+.grid-third-title {
+    padding-top: 30px;
+    font-size: 22px;
+    color: white;
+    font-weight: 400;
+}
+
+.grid-third-list {
+    padding-top: 18px;
+    font-size: 17px;
+    color: #99EAEE;
+}
+
+.grid-third-list li{
+    padding-top: 5px;
+}
+
+footer {
+    text-align: center;
+}
+
+.attribution { 
+    font-size: 12px; 
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (max-width:768px ) {
+    .grid-main {
+        display: inline-block;
+        margin-top: 17%;
+    }
+    
+    p, li {
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
+    .grid-first {
+        grid-area: grid-first;
+        background-color: #FFFFFF;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        -webkit-box-shadow: 0px -5px 10px 0px rgba(186, 192, 204, 0.5);
+        -moz-box-shadow: 0px -5px 10px 0px rgba(186, 192, 204, 0.5);
+        box-shadow: 0px -5px 10px 0px rgba(186, 192, 204, 0.5);
+        padding-bottom: 10%;
+    }
+    
+    .grid-first-title {
+        padding-top: 30px;
+        font-size: 25px;
+        color: #30ABA9;
+        font-weight: 600;
+    } 
+    
+    .grid-first-p1 {
+        padding-top: 20px;
+        font-size: 20px;
+        color: #BFDF32;
+        font-weight: 500;
+    }
+    
+    .grid-first-p2 {
+        padding-top: 15px;
+        font-size: 15px;
+        color: #BAC0CC;
+    }
+    
+    .grid-first-p3 {
+        font-size: 15px;
+        color: #BAC0CC;
+    }     
+
+    .grid-second {
+        grid-area: grid-second;
+        background-color: #2BB3B1;
+        border-bottom-left-radius: 0px;
+        -webkit-box-shadow: -4px 4px 10px 0px rgba(186, 192, 204, 0.5);
+        -moz-box-shadow: -4px 4px 10px 0px rgba(186, 192, 204, 0.5);
+        box-shadow: -4px 4px 10px 0px rgba(186, 192, 204, 0.5);
+        padding-bottom: 10%;
+    }
+    
+    .grid-second-title {
+        padding-top: 30px;
+        font-size: 22px;
+        color: white;
+        font-weight: 400;
+    }
+    
+    .grid-second-div {
+        display: flex;
+    }
+    
+    .grid-second-p1 {
+        padding-top: 25px;
+        font-size: 40px;
+        color: white;
+        font-weight: 700;
+        padding-right: 20px;
+    }
+    
+    .grid-second-p2 {
+        padding-left: 0px;
+        padding-top: 35px;
+        font-size: 20px;
+        color: #66D4D3;
+    }
+    
+    .grid-second-p3 {
+        padding-top: 20px;
+        font-size: 15px;
+        color: #D0FFFF;
+    }
+    
+    .grid-second-button {
+        text-align: center;
+    }
+    
+    .grid-second-button button {
+        background-color: #BFDF32;
+        color: #FDFFBB;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        height: 60px;
+        width: 340px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        box-shadow: 0 0 1em -10px #000000;
+    }
+    
+    .grid-second-button button:hover {
+        cursor: pointer;
+    }
+
+    .grid-third {
+        grid-area: grid-third;
+        background-color: #4ABEBD;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        -webkit-box-shadow: 4px 3px 10px 0px rgba(186, 192, 204, 0.5);
+        -moz-box-shadow: 4px 3px 10px 0px rgba(186, 192, 204, 0.5);
+        box-shadow: 4px 3px 10px 0px rgba(186, 192, 204, 0.5);
+        padding-bottom: 10%;
+    }
+    
+    .grid-third-title {
+        padding-top: 30px;
+        font-size: 22px;
+        color: white;
+        font-weight: 400;
+    }
+    
+    .grid-third-list {
+        padding-top: 18px;
+        font-size: 17px;
+        color: #99EAEE;
+    }
+    
+    .grid-third-list li{
+        padding-top: 5px;
+    }
+    
+    footer {
+        margin: 10%;
+        text-align: center;
+    }
+    
+    .attribution { 
+        font-size: 12px; 
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        margin-top: 15px;
+    }
+    
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1440px ) {
+    .grid-main {
+        display: grid;
+        grid-template-areas: "grid-first grid-first"
+                             "grid-second grid-third";
+        margin-top: 18%;
+        margin-left: 20%;
+        margin-right: 20%;
+        height: 520px;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr 1fr;
+    }
+    
+    p, li {
+        padding-left: 50px;
+        padding-right: 100px;
+    }
+    
+    .grid-first {
+        grid-area: grid-first;
+        background-color: #FFFFFF;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        -webkit-box-shadow: 0px -5px 10px 0px rgba(186, 192, 204, 0.5);
+        -moz-box-shadow: 0px -5px 10px 0px rgba(186, 192, 204, 0.5);
+        box-shadow: 0px -5px 10px 0px rgba(186, 192, 204, 0.5);
+    }
+    
+    .grid-first-title {
+        padding-top: 50px;
+        font-size: 30px;
+        color: #30ABA9;
+        font-weight: 700;
+    }
+    
+    .grid-first-p1 {
+        padding-top: 30px;
+        font-size: 20px;
+        color: #BFDF32;
+        font-weight: 700;
+    }
+    
+    .grid-first-p2 {
+        padding-top: 30px;
+        font-size: 20px;
+        color: #BAC0CC;
+    }
+    
+    .grid-first-p3 {
+        padding-top: 10px;
+        font-size: 20px;
+        color: #BAC0CC;
+    }
+    
+    .grid-second {
+        grid-area: grid-second;
+        background-color: #2BB3B1;
+        border-bottom-left-radius: 10px;
+        -webkit-box-shadow: -4px 4px 10px 0px rgba(186, 192, 204, 0.5);
+        -moz-box-shadow: -4px 4px 10px 0px rgba(186, 192, 204, 0.5);
+        box-shadow: -4px 4px 10px 0px rgba(186, 192, 204, 0.5);
+    }
+    
+    .grid-second-title {
+        padding-top: 30px;
+        font-size: 22px;
+        color: white;
+        font-weight: 400;
+    }
+    
+    .grid-second-div {
+        display: flex;
+    }
+    
+    .grid-second-p1 {
+        padding-top: 25px;
+        font-size: 40px;
+        color: white;
+        font-weight: 700;
+        padding-right: 20px;
+    }
+    
+    .grid-second-p2 {
+        padding-left: 0px;
+        padding-top: 35px;
+        font-size: 20px;
+        color: #66D4D3;
+    }
+    
+    .grid-second-p3 {
+        padding-top: 20px;
+        font-size: 15px;
+        color: #D0FFFF;
+    }
+    
+    .grid-second-button {
+        text-align: center;
+    }
+    
+    .grid-second-button button {
+        background-color: #BFDF32;
+        color: #FDFFBB;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        height: 60px;
+        width: 340px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        box-shadow: 0 0 1em -10px #000000;
+    }
+    
+    .grid-second-button button:hover {
+        cursor: pointer;
+    }
+    
+    .grid-third {
+        grid-area: grid-third;
+        background-color: #4ABEBD;
+        border-bottom-right-radius: 10px;
+        -webkit-box-shadow: 4px 3px 10px 0px rgba(186, 192, 204, 0.5);
+        -moz-box-shadow: 4px 3px 10px 0px rgba(186, 192, 204, 0.5);
+        box-shadow: 4px 3px 10px 0px rgba(186, 192, 204, 0.5);
+    }
+    
+    .grid-third-title {
+        padding-top: 30px;
+        font-size: 22px;
+        color: white;
+        font-weight: 400;
+    }
+    
+    .grid-third-list {
+        padding-top: 18px;
+        font-size: 17px;
+        color: #99EAEE;
+    }
+    
+    .grid-third-list li{
+        padding-top: 5px;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    
+    .attribution { 
+        font-size: 12px; 
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        margin-top: 15px;
+    }
+    
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+        text-decoration: none;
+        text-align: center;
+    }
+}
